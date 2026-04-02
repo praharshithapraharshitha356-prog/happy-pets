@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Happy Paws Pet Shop</title>
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #fefefe;
+            color: #333;
+        }
+
+        /* Navigation Header */
+        header {
+            background-color: #ff9f1c;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #e88e15;
+        }
+
+        /* Services Layout */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .services-header h1 {
+            color: #ff9f1c;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .service-item {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+            gap: 2rem;
+        }
+
+        /* Responsive adjustment for small screens */
+        @media (max-width: 600px) {
+            .service-item {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            background: #fff4e6;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .service-content h2 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-content p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🐾 Happy Paws Pet Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pets.html">Pets</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="services-header">
+            <h1>Our Services</h1>
+            <p>Everything you need to keep your pet happy and healthy.</p>
+        </div>
+
+        <div class="service-list">
+            <!-- Grooming -->
+            <article class="service-item">
+                <div class="service-icon">✂️</div>
+                <div class="service-content">
+                    <h2>Pet Grooming</h2>
+                    <p>Professional bathing, hair trimming, nail clipping, and ear cleaning. We make sure your pet leaves looking and smelling wonderful!</p>
+                </div>
+            </article>
+
+            <!-- Food Sales -->
+            <article class="service-item">
+                <div class="service-icon">🦴</div>
+                <div class="service-content">
+                    <h2>Pet Food Sales</h2>
+                    <p>We stock a wide variety of premium and specialized diets. Our experts can help you choose the best nutrition for your pet's specific needs.</p>
+                </div>
+            </article>
+
+            <!-- Veterinary Care -->
+            <article class="service-item">
+                <div class="service-icon">🩺</div>
+                <div class="service-content">
+                    <h2>Veterinary Care</h2>
+                    <p>Routine check-ups, vaccinations, and wellness exams. Our in-house vet ensures your furry friends stay in top shape year-round.</p>
+                </div>
+            </article>
+
+            <!-- Pet Training -->
+            <article class="service-item">
+                <div class="service-icon">🎓</div>
+                <div class="service-content">
+                    <h2>Pet Training</h2>
+                    <p>From basic puppy manners to advanced behavioral training. Our positive reinforcement methods help build a stronger bond between you and your pet.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>Happy Paws Pet Shop</strong></p>
+        <p>123 Pet Lane, Animal City, AC 12345</p>
+        <p>Phone: (555) 123-4567 | Email: hello@happypawspetshop.com</p>
+        <p style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.7;">&copy; 2026 Happy Paws Pet Shop</p>
+    </footer>
+
+</body>
+</html>

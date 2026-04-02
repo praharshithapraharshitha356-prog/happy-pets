@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Happy Paws Pet Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f59e0b', // Amber 500
+                        primaryDark: '#d97706', // Amber 600
+                        secondary: '#1f2937', // Gray 800
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation Menu -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2 text-2xl font-bold text-primary">
+                        <i class="fas fa-paw"></i>
+                        <span>Happy Paws</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary font-medium transition duration-150">Home</a>
+                    <a href="about.html" class="text-primary border-b-2 border-primary font-medium transition duration-150">About Us</a>
+                    <a href="pets.html" class="text-gray-600 hover:text-primary font-medium transition duration-150">Our Pets</a>
+                    <a href="services.html" class="text-gray-600 hover:text-primary font-medium transition duration-150">Services</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-primary font-medium transition duration-150">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-orange-50">Home</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-primary bg-orange-50">About Us</a>
+                <a href="pets.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-orange-50">Our Pets</a>
+                <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-orange-50">Services</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-orange-50">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="bg-primary text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">About Us</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto opacity-90">Discover the story behind Happy Paws and the team dedicated to making tails wag and purrs louder.</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-12 md:py-20">
+        
+        <!-- Story and Image Section -->
+        <section class="flex flex-col md:flex-row items-center gap-12 mb-20">
+            <div class="w-full md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     onerror="this.src='https://placehold.co/800x600/f59e0b/white?text=Happy+Paws+Pet+Shop'" 
+                     alt="Happy dog looking at the camera" 
+                     class="rounded-2xl shadow-xl w-full object-cover h-[400px]">
+            </div>
+            <div class="w-full md:w-1/2">
+                <h2 class="text-3xl font-bold text-secondary mb-6 flex items-center gap-3">
+                    <i class="fas fa-book-open text-primary"></i> Our Story
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-4 text-lg">
+                    It all started in 2015 when our founder, Sarah, rescued a scruffy, energetic terrier mix named Barnaby. While searching for high-quality, natural food and safe toys for him, she realized how difficult it was to find a single, trustworthy local store that truly cared about animal well-being.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    Driven by her deep love for animals, Sarah decided to create the place she was looking for. What began as a small corner shop providing premium kibble has blossomed into <strong>Happy Paws Pet Shop</strong>—a comprehensive community hub. Today, we offer not just top-tier products, but a place where pet parents can connect, learn, and give their furry companions the best life possible.
+                </p>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 md:p-12 mb-20 text-center relative overflow-hidden">
+            <!-- Decorative icon -->
+            <i class="fas fa-heart text-9xl text-orange-50 absolute -right-4 -bottom-4 z-0 transform rotate-12"></i>
+            
+            <div class="relative z-10 max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold text-secondary mb-6">Our Mission</h2>
+                <p class="text-xl text-gray-600 leading-relaxed italic mb-6">
+                    "To enrich the lives of pets and their people by providing exceptional care, premium nutrition, and endless love."
+                </p>
+                <p class="text-gray-600">
+                    At Happy Paws, we believe every animal deserves respect, comfort, and joy. We carefully vet every brand we carry, ensuring that your pets are eating healthy and playing safe. Whether it's a dog, cat, bird, or small mammal, our love for animals drives everything we do.
+                </p>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-secondary mb-4">Meet Our Team</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">The passionate animal lovers who make Happy Paws feel like home.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/150x150/f59e0b/white?text=S" alt="Sarah" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-orange-100">
+                    <h3 class="text-xl font-bold text-secondary">Sarah Jenkins</h3>
+                    <p class="text-primary font-medium mb-3">Founder & Owner</p>
+                    <p class="text-gray-500 text-sm">A lifelong animal advocate, Sarah oversees everything at Happy Paws and can usually be found handing out treats at the front register.</p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/150x150/f59e0b/white?text=D" alt="David" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-orange-100">
+                    <h3 class="text-xl font-bold text-secondary">David Chen</h3>
+                    <p class="text-primary font-medium mb-3">Master Groomer</p>
+                    <p class="text-gray-500 text-sm">With 10 years of experience, David knows how to make every dog and cat look and feel their absolute best. He specializes in nervous pets.</p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/150x150/f59e0b/white?text=M" alt="Maria" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-orange-100">
+                    <h3 class="text-xl font-bold text-secondary">Maria Rodriguez</h3>
+                    <p class="text-primary font-medium mb-3">Nutrition Specialist</p>
+                    <p class="text-gray-500 text-sm">Maria is our go-to expert for dietary needs, allergies, and supplements. She helps pet parents create the perfect meal plans.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-10 mt-auto">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <a href="index.html" class="flex items-center gap-2 text-2xl font-bold text-white mb-4">
+                    <i class="fas fa-paw text-primary"></i>
+                    <span>Happy Paws</span>
+                </a>
+                <p class="text-gray-400 text-sm">Your one-stop shop for happy, healthy pets. We provide premium supplies, expert advice, and lots of love.</p>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="index.html" class="hover:text-primary transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-primary transition">About Us</a></li>
+                    <li><a href="pets.html" class="hover:text-primary transition">Our Pets</a></li>
+                    <li><a href="services.html" class="hover:text-primary transition">Services</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-4">Contact Info</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-primary w-4"></i> 123 Pet Lane, Barksville, NY</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-phone text-primary w-4"></i> (555) 123-4567</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-envelope text-primary w-4"></i> hello@happypaws.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4 mt-8 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
+            <p>&copy; 2026 Happy Paws Pet Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

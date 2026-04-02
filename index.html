@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Paws Pet Shop</title>
+    <style>
+        /* Basic CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #ff9f1c; /* Warm orange color */
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap; /* Helps with mobile screens */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #e88e15; /* Slightly darker orange on hover */
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Welcome Section */
+        .welcome-section {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .welcome-section h2 {
+            color: #ff9f1c;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .welcome-section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+            color: #555;
+        }
+
+        /* Pet Images Container */
+        .pet-images {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .pet-images img {
+            width: 300px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Products Section */
+        .products-section {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin-bottom: 3rem;
+        }
+
+        .products-section h3 {
+            text-align: center;
+            font-size: 1.8rem;
+            color: #ff9f1c;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            flex: 1;
+            min-width: 250px;
+            background-color: #fffaf0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #ffe8cc;
+            text-align: center;
+        }
+
+        .product-card h4 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1>🐾 Happy Paws Pet Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pets.html">Pets</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container">
+        
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <h2>Welcome to Happy Paws Pet Shop!</h2>
+            <p>Your one-stop destination for happy, healthy, and playful pets. We believe every furry, feathered, or scaled friend deserves the absolute best. Come visit us to find your new best friend or stock up on premium supplies.</p>
+            
+            <!-- Pet Images -->
+            <div class="pet-images">
+                <!-- Using placeholder images from Unsplash source -->
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=400&q=80" alt="A happy beagle dog">
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=400&q=80" alt="A cute tabby cat looking up">
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products-section">
+            <h3>Featured Products</h3>
+            <div class="product-grid">
+                
+                <div class="product-card">
+                    <h4>Premium Pet Food</h4>
+                    <p>Nutritious and delicious meals for dogs, cats, birds, and small animals. We carry top brands to keep your pets healthy.</p>
+                </div>
+
+                <div class="product-card">
+                    <h4>Fun Toys</h4>
+                    <p>Keep your pets entertained for hours with our wide selection of squeaky toys, feather wands, and puzzle feeders.</p>
+                </div>
+
+                <div class="product-card">
+                    <h4>Accessories</h4>
+                    <p>From cozy beds and stylish collars to grooming brushes and travel carriers, we have everything your pet needs.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Happy Paws Pet Shop</strong></p>
+        <p>123 Pet Lane, Animal City, AC 12345</p>
+        <p>Phone: (555) 123-4567 | Email: hello@happypawspetshop.com</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem; color: #aaa;">&copy; 2026 Happy Paws Pet Shop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
