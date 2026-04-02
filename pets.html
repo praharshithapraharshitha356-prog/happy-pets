@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Pets - Happy Paws Pet Shop</title>
+    <!-- Using Tailwind CSS for a clean, modern, and beginner-friendly layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans flex flex-col min-h-screen">
+
+    <!-- Navigation Menu -->
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <div class="text-2xl font-bold text-indigo-600 mb-4 sm:mb-0">
+                🐾 Happy Paws
+            </div>
+            <nav>
+                <ul class="flex space-x-6 text-gray-600 font-medium">
+                    <li><a href="index.html" class="hover:text-indigo-600 transition-colors">Home</a></li>
+                    <li><a href="about.html" class="hover:text-indigo-600 transition-colors">About</a></li>
+                    <li><a href="pets.html" class="text-indigo-600 border-b-2 border-indigo-600 pb-1">Pets</a></li>
+                    <li><a href="services.html" class="hover:text-indigo-600 transition-colors">Services</a></li>
+                    <li><a href="contact.html" class="hover:text-indigo-600 transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-10">
+        
+        <!-- Page Heading -->
+        <div class="text-center mb-10">
+            <h1 class="text-4xl font-extrabold text-gray-800 mb-2">Our Pets</h1>
+            <p class="text-gray-500">Find your new best friend among our adorable, healthy, and happy pets.</p>
+        </div>
+
+        <!-- Pet Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- Dog Card -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                     alt="Golden Retriever Dog" 
+                     class="w-full h-48 object-cover"
+                     onerror="this.src='https://via.placeholder.com/600x400?text=Dog+Image'">
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <h2 class="text-xl font-bold text-gray-800">Buddy</h2>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Dog</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3">Age: 2 years</p>
+                    <p class="text-gray-600 text-sm mb-4">A playful and energetic Golden Retriever looking for an active and loving home.</p>
+                    <button class="w-full bg-indigo-50 text-indigo-600 font-semibold py-2 rounded-lg hover:bg-indigo-600 hover:text-white transition-colors duration-200">
+                        Meet Buddy
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cat Card -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                     alt="Orange Cat" 
+                     class="w-full h-48 object-cover"
+                     onerror="this.src='https://via.placeholder.com/600x400?text=Cat+Image'">
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <h2 class="text-xl font-bold text-gray-800">Luna</h2>
+                        <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded">Cat</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3">Age: 1 year</p>
+                    <p class="text-gray-600 text-sm mb-4">A sweet and independent domestic shorthair. She loves lounging in the afternoon sun.</p>
+                    <button class="w-full bg-indigo-50 text-indigo-600 font-semibold py-2 rounded-lg hover:bg-indigo-600 hover:text-white transition-colors duration-200">
+                        Meet Luna
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bird Card -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1552728089-5710d3304b48?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                     alt="Colorful Parrot" 
+                     class="w-full h-48 object-cover"
+                     onerror="this.src='https://via.placeholder.com/600x400?text=Bird+Image'">
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <h2 class="text-xl font-bold text-gray-800">Charlie</h2>
+                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Bird</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3">Age: 3 years</p>
+                    <p class="text-gray-600 text-sm mb-4">A colorful, highly intelligent, and talkative parrot that will keep you entertained all day.</p>
+                    <button class="w-full bg-indigo-50 text-indigo-600 font-semibold py-2 rounded-lg hover:bg-indigo-600 hover:text-white transition-colors duration-200">
+                        Meet Charlie
+                    </button>
+                </div>
+            </div>
+
+            <!-- Fish Card -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                     alt="Clownfish" 
+                     class="w-full h-48 object-cover"
+                     onerror="this.src='https://via.placeholder.com/600x400?text=Fish+Image'">
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <h2 class="text-xl font-bold text-gray-800">Nemo</h2>
+                        <span class="bg-cyan-100 text-cyan-800 text-xs font-semibold px-2.5 py-0.5 rounded">Fish</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3">Age: 6 months</p>
+                    <p class="text-gray-600 text-sm mb-4">A beautiful and healthy clownfish, perfect for a beginner saltwater aquarium setup.</p>
+                    <button class="w-full bg-indigo-50 text-indigo-600 font-semibold py-2 rounded-lg hover:bg-indigo-600 hover:text-white transition-colors duration-200">
+                        Meet Nemo
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-lg font-bold text-white mb-2">Happy Paws Pet Shop</h3>
+            <p class="mb-4">123 Pet Lane, Animal City, AC 12345</p>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="hover:text-white transition-colors">Facebook</a>
+                <a href="#" class="hover:text-white transition-colors">Instagram</a>
+                <a href="#" class="hover:text-white transition-colors">Twitter</a>
+            </div>
+            <p class="text-sm text-gray-500">&copy; 2026 Happy Paws Pet Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
